@@ -20,6 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!--fuentes impresionantes-->
     <script
       src="https://kit.fontawesome.com/920379bed9.js"
@@ -29,57 +36,59 @@
   </head>
   <body>
     <div class="contenedor">
-        <div class="contenedor-secundario">
-    <header>
-      <h1>Bienvenidos</h1>
-      <h2>Stiker <span>Mania</span></h2>
-    </header>
-    <main>
-      <h3>Ingresa tu Clave secreta</h3>
-      <section>
-        <select name="" id="opc1">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <select name="" id="opc2">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <select name="" id="opc3">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-         
-        </select>
-        
-      </section>
-       <div class="botones">
-      <button  id="verificar" class="verificar">Verificar</button>
-       <a href="./StickerMania.html"><button disabled >Go !</button></a>
+      <div class="contenedor-secundario">
+        <header>
+          <h1 class="titulo">Bienvenidos</h1>
+          <h2 class="titulo2">Sticker <span>M</span><span>ania</span></h2>
+        </header>
+        <main>
+          <h3 class="titulo3">Ingresa tu Clave secreta antes de presionar Go!</h3>
+          <section class="selectores">
+            <select name="" id="opc1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="" id="opc2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="" id="opc3">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </section>
+          <p id="textopasar" class="textopasar"></p>
+          <div class="botones">
+            <button id="verificar" class="verificar">Verificar</button>
+            <a href="./StickerMania.html"
+              ><button id="Go" class="Go" disabled>Go !</button></a
+            >
+          </div>
+        </main>
       </div>
-    </main>
-</div><!--contenedor-secundario-->
-</div>
+      <!--contenedor-secundario-->
+    </div>
     <script src="scrip.js"></script>
   </body>
 </html>

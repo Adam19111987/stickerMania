@@ -3,10 +3,12 @@
 :root{
     --FuentePrimaria :  "Press Start 2P", system-ui; ;
     --FuenteSecundaria : "Bungee Tint", sans-serif ;
+    --FuenteTerciaria : "Noto Sans", sans-serif;
     --rojosuper :  #eb391a;
     --azulsuper : #01ace5;
     --amarisuper : #FFD401;
     --verdesuper : #36B649;
+    
 }
 
 
@@ -22,6 +24,7 @@ html {
 
 body {
     font-size: 16px; /* 1rem = 10px */
+    background-image: url(../imagenes/Fondo\ de\ pantalla.jpg);
     
    
 }
@@ -30,10 +33,12 @@ a{
     text-decoration: none;
 }
 
+/* Estilos ingreso */
 .contenedor{
  max-width: 120rem;
  margin: 0 auto;
  min-height: 100vh;
+
     
 }
 
@@ -43,5 +48,77 @@ a{
     justify-content: center;
     align-items: center;
     margin-top: 25%;
+    background-color: white;
 }
 
+.titulo{
+    font-family: var(--FuentePrimaria);
+    font-size: 3rem;
+    color: var(--azulsuper);
+    text-align: center;
+}
+.titulo2{
+    font-family:var(--FuentePrimaria);
+    text-align: center;
+    color: var(--rojosuper);
+}
+
+.titulo2 span:nth-child(1){
+    color: var(--verdesuper);
+}
+.titulo2 span:nth-child(2){
+    color:var(--amarisuper) ;
+}
+.titulo3{
+    text-align: center;
+    font-family: var(--FuenteSecundaria);
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.verificar{
+  font-family: var(--FuenteTerciaria);
+  padding: 1rem;
+  border-radius: .8rem;
+  border: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--verdesuper);
+  cursor: pointer;
+  margin-bottom: 70px;
+
+}
+
+
+
+.Go{
+  padding: 20px;
+  width: 15rem;
+  height: 15rem;
+ 
+  font-family: var(--FuenteSecundaria);
+  font-size: 5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.textopasar{
+    color: var(--rojosuper);
+    font-size: 1.7rem;
+    font-family: var(--FuenteSecundaria);
+    text-align: center;
+
+}
