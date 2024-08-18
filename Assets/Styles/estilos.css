@@ -1,0 +1,47 @@
+/* Globales */
+
+:root{
+    --FuentePrimaria :  "Press Start 2P", system-ui; ;
+    --FuenteSecundaria : "Bungee Tint", sans-serif ;
+    --rojosuper :  #eb391a;
+    --azulsuper : #01ace5;
+    --amarisuper : #FFD401;
+    --verdesuper : #36B649;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+   
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+ max-width: 120rem;
+ margin: 0 auto;
+ min-height: 100vh;
+    
+}
+
+.contenedor-secundario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
