@@ -34,22 +34,22 @@
             </header>
             <main class="contenedor_main">
                 <div class="imagenes">
-                <img id="imagen" class="imagen" src="./Assets/imagenes/imagen 1.jpeg" alt="">
-                <img id="imagen" class="imagen" src="./Assets/imagenes/imagen 2.jpeg" alt="">
-                <img id="imagen" class="imagen" src="./Assets/imagenes/imagen 3.jpeg" alt="">
+                <img  class="imagen" src="./Assets/imagenes/imagen 1.jpeg" alt="">
+                <img  class="imagen" src="./Assets/imagenes/imagen 2.jpeg" alt="">
+                <img  class="imagen" src="./Assets/imagenes/imagen 3.jpeg" alt="">
             </div>
-                <div class="inputs">
+                <div class="inputs" >
                     <div class="cantidad">
                     <label for="cantidad">Cantidad</label>
-                    <input type="text">
+                    <input id="primer_stkr" type="text" value="0">
                 </div>
                     <div class="cantidad">
                     <label for="cantidad">Cantidad</label>
-                    <input type="text">
+                    <input id="segundo_stkr" type="text" value="0">
                 </div>
                     <div class="cantidad">
                     <label for="cantidad">Cantidad</label>
-                    <input type="text">
+                    <input id="tercer_stkr" type="text" value="0">
                 </div>
                     
                 </div>
@@ -57,11 +57,14 @@
                 <div class="botons">
                 <button class="verificador" id="verificar">verificar</button>
                 <button disabled id="descargar" class="descargar">descargar</button>
-                <p class="leyenda">...</p>
+              
             </div>
+            <p class="leyenda" id="leyenda">
+              Limite de descarga solo 10 stickers
+            </p>
             </main>
         </div>
     </div>
-    <script src="scrip.js"></script>
+   <script src="StickerMania.js"></script>
   </body>
 </html>
