@@ -11,6 +11,9 @@ verificar.addEventListener('click', function(){
         goBoton.disabled = false;
         texto_pase.innerHTML = "Password  correcto puede presionar el boton Go!"
         goBoton.style.backgroundColor = "#01ace5";
+        setTimeout(function(){
+            location.reload(1);
+          },15000)
     } else{
         texto_pase.innerHTML = "Password  Incorrecto!"
   setTimeout(function(){
@@ -19,4 +22,13 @@ verificar.addEventListener('click', function(){
      goBoton.disabled = true;
         
     }
+})
+
+
+
+imagenes = document.querySelectorAll('#imagen');
+
+
+imagenes.addEventListener('click', function(){
+    console.log('haz hecho click');
 })
