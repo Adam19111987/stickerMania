@@ -151,6 +151,7 @@ a {
 .imagen{
     border: none;
     cursor: pointer;
+    
 }
 .inputs{
     margin-bottom: 4rem;
@@ -204,6 +205,6 @@ a {
 
 }
 
-.borderando{
+.borde_rojo{
     border: solid 2px red;
 }

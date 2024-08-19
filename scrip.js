@@ -1,34 +1,23 @@
-clave1 = document.querySelector('#opc1').value;
-clave2 = document.querySelector('#opc2').value;
-clave3 = document.querySelector('#opc3').value;
-VTTCueerificar = document.querySelector('#verificar');
-goBoton = document.querySelector('#Go');
-texto_pase = document.querySelector('#textopasar');
+clave1 = document.querySelector("#opc1").value;
+clave2 = document.querySelector("#opc2").value;
+clave3 = document.querySelector("#opc3").value;
+VTTCueerificar = document.querySelector("#verificar");
+goBoton = document.querySelector("#Go");
+texto_pase = document.querySelector("#textopasar");
 
-
-verificar.addEventListener('click', function(){
-    if(clave1 == 9 && clave2 == 1 && clave3 == 1){
-        goBoton.disabled = false;
-        texto_pase.innerHTML = "Password  correcto puede presionar el boton Go!"
-        goBoton.style.backgroundColor = "#01ace5";
-        setTimeout(function(){
-            location.reload(1);
-          },15000)
-    } else{
-        texto_pase.innerHTML = "Password  Incorrecto!"
-  setTimeout(function(){
-    location.reload();
-  },2000)
-     goBoton.disabled = true;
-        
-    }
-})
-
-
-
-imagenes = document.querySelectorAll('#imagen');
-
-
-imagenes.addEventListener('click', function(){
-    console.log('haz hecho click');
-})
+verificar.addEventListener("click", function () {
+  if (clave1 == 9 && clave2 == 1 && clave3 == 1) {
+    goBoton.disabled = false;
+    texto_pase.innerHTML = "Password  correcto puede presionar el boton Go!";
+    goBoton.style.backgroundColor = "#01ace5";
+    setTimeout(function () {
+      location.reload(1);
+    }, 15000);
+  } else {
+    texto_pase.innerHTML = "Password  Incorrecto!";
+    setTimeout(function () {
+      location.reload();
+    }, 2000);
+    goBoton.disabled = true;
+  }
+});
