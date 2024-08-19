@@ -1,96 +1,95 @@
 /* Globales */
 
-:root{
-    --FuentePrimaria :  "Press Start 2P", system-ui; ;
-    --FuenteSecundaria : "Bungee Tint", sans-serif ;
-    --FuenteTerciaria : "Noto Sans", sans-serif;
-    --rojosuper :  #eb391a;
-    --azulsuper : #01ace5;
-    --amarisuper : #FFD401;
-    --verdesuper : #36B649;
-    
+:root {
+  --FuentePrimaria: "Press Start 2P", system-ui;
+  --FuenteSecundaria: "Bungee Tint", sans-serif;
+  --FuenteTerciaria: "Noto Sans", sans-serif;
+  --rojosuper: #eb391a;
+  --azulsuper: #01ace5;
+  --amarisuper: #ffd401;
+  --verdesuper: #36b649;
 }
-
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model **/
-   
+  font-size: 62.5%;
+  box-sizing: border-box; /* Hack para Box Model **/
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    font-size: 16px; /* 1rem = 10px */
-    background-image: url(../imagenes/Fondo\ de\ pantalla.jpg);
-    
-   
+  font-size: 16px; /* 1rem = 10px */
+  background-image: url(../imagenes/Fondo\ de\ pantalla.jpg);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* Estilos ingreso */
-.contenedor{
- max-width: 120rem;
- margin: 0 auto;
- min-height: 100vh;
-
-    
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 100%;
 }
 
-.contenedor-secundario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25%;
-    background-color: white;
+.contenedor-secundario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  background-color: white;
+  padding: 20px;
 }
 
-.titulo{
-    font-family: var(--FuentePrimaria);
-    font-size: 3rem;
-    color: var(--azulsuper);
-    text-align: center;
+
+
+
+.titulo {
+  font-family: var(--FuentePrimaria);
+  font-size: 3rem;
+  color: var(--azulsuper);
+  text-align: center;
 }
-.titulo2{
-    font-family:var(--FuentePrimaria);
-    text-align: center;
-    color: var(--rojosuper);
+.titulo2 {
+  font-family: var(--FuentePrimaria);
+  text-align: center;
+  color: var(--rojosuper);
 }
 
-.titulo2 span:nth-child(1){
-    color: var(--verdesuper);
+.titulo2 span:nth-child(1) {
+  color: var(--verdesuper);
 }
-.titulo2 span:nth-child(2){
-    color:var(--amarisuper) ;
+.titulo2 span:nth-child(2) {
+  color: var(--amarisuper);
 }
-.titulo3{
-    text-align: center;
-    font-family: var(--FuenteSecundaria);
+.titulo3 {
+  text-align: center;
+  font-family: var(--FuenteSecundaria);
 }
-.botones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.selectores{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    gap: 1rem;
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.verificar{
+.selectores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.verificar {
   font-family: var(--FuenteTerciaria);
   padding: 1rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   border: none;
   font-weight: 800;
   text-transform: uppercase;
@@ -98,16 +97,24 @@ a{
   background-color: var(--verdesuper);
   cursor: pointer;
   margin-bottom: 70px;
-
 }
 
+.opc1,
+.opc2,
+.opc3 {
+    padding: 10px;
+    background-color: var(--azulsuper);
+    border-radius: .5rem;
+    color: white;
+    font-weight: bold;
+    border: solid 2px var(--rojosuper);
+}
 
-
-.Go{
+.Go {
   padding: 20px;
   width: 15rem;
   height: 15rem;
- 
+
   font-family: var(--FuenteSecundaria);
   font-size: 5rem;
   border-radius: 50%;
@@ -115,10 +122,88 @@ a{
   cursor: pointer;
   margin-bottom: 2rem;
 }
-.textopasar{
-    color: var(--rojosuper);
-    font-size: 1.7rem;
-    font-family: var(--FuenteSecundaria);
-    text-align: center;
+.textopasar {
+  color: var(--rojosuper);
+  font-size: 1.7rem;
+  font-family: var(--FuenteSecundaria);
+  text-align: center;
+}
 
+/* Estilos Sticker mania */
+
+.contenedor_main{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2rem;
+   
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+      
+}
+
+.imagen{
+    border: none;
+    cursor: pointer;
+}
+.inputs{
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 5.8rem;
+    
+}
+
+.inputs, input{
+    text-align: center;
+}
+.cantidad{
+    display: flex;
+    flex-direction: column;
+   row-gap: 1rem;
+}
+
+.botons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+    
+    
+
+}
+
+.verificador{
+    padding: 10px;
+    background-color: var(--verdesuper);
+    font-family: var(--FuenteTerciaria);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: .8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.descargar{
+    padding: 10px;
+   
+    font-family: var(--FuenteTerciaria);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: .8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.borderando{
+    border: solid 2px red;
 }
