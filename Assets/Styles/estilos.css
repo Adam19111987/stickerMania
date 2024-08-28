@@ -4,6 +4,7 @@
   --FuentePrimaria: "Press Start 2P", system-ui;
   --FuenteSecundaria: "Bungee Tint", sans-serif;
   --FuenteTerciaria: "Noto Sans", sans-serif;
+  --fuenteRoboto : "Roboto Condensed", sans-serif;
   --rojosuper: #eb391a;
   --azulsuper: #01ace5;
   --amarisuper: #ffd401;
@@ -203,6 +204,12 @@ a {
     cursor: pointer;
     text-transform: uppercase;
 
+}
+
+.leyenda{
+  font-family: var(--fuenteRoboto);
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .borde_rojo{

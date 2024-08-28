@@ -27,13 +27,15 @@ verificador.addEventListener("click", function () {
       " Limite permitido, adelante puedes descargar los Stickers";
     descagar.disabled = false;
     descagar.style.backgroundColor = "#01ace5";
+    leyenda.style.color = "blue";
+    
    
   } 
 
   else if(sumaTotal <= 0){
-    leyenda.innerHTML = "Aun no ha selecionado la cantidad de los stiker que desea descargar"
+    leyenda.innerHTML = "Aun no has selecionado nada"
     descagar.disabled = true;
-    
+    leyenda.style.color = "green";
     setTimeout(function () {
       location.reload();
     }, 3000);
@@ -44,9 +46,15 @@ verificador.addEventListener("click", function () {
 
   else {
     leyenda.innerHTML = "La cantidad seleccionada supera el limite permitido";
+    leyenda.style.color = "red";
     descagar.disabled = true;
     setTimeout(function () {
       location.reload();
     }, 3000);
   }
 });
+
+
+descagar.addEventListener('click', function(){
+  alert("Descarga completa")
+})
