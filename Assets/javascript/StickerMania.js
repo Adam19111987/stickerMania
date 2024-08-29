@@ -5,11 +5,11 @@ document.querySelectorAll(".imagen").forEach((img) => {
 });
 
 primer_stkr = document.querySelector("#primer_stkr").value;
-conver_primer_stkr = Number(primer_stkr);
+conver_primer_stkr = parseInt(primer_stkr);
 segundo_stkr = document.querySelector("#segundo_stkr").value;
-conver_segundo_stkr = Number(segundo_stkr);
+conver_segundo_stkr = parseInt(segundo_stkr);
 tercer_stkr = document.querySelector("#tercer_stkr").value; 
-conver_tercer_stkr = Number(tercer_stkr);
+conver_tercer_stkr = parseInt(tercer_stkr);
 sumaTotal = conver_primer_stkr + conver_segundo_stkr + conver_tercer_stkr;
 leyenda = document.querySelector("#leyenda");
 
